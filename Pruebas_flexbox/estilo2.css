@@ -1,0 +1,123 @@
+body{
+    background-color: rgb(185, 194, 202);
+}
+
+h1{
+    color: tomato;
+}
+
+h3{
+    text-align: center;
+}
+
+.contenedor{
+    background-color: white;
+    border: 6px solid rgb(52, 95, 97);
+    width: 80%;
+    margin: 0 auto;
+}
+
+#nivel1 .contenido{
+    background-color: #97979783;
+    width: 50px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.contenedor_flex{
+    background-color: white;
+    border: 6px solid rgb(52, 95, 97);
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+#contf2 .contenido, #cont2 .contenido{
+    width: 150px;
+}
+
+/*  FLEX-GROW */
+/*  El primer elemento al no tener ningún flex aplicado, se le aplica el por defecto (0) y se
+    queda con el tamaño original */
+div#contenido1_2{
+    /* flex-grow: 1; */
+}
+/*  Este segundo elemento obtiene 2 partes de las 7 partes que sobran */
+div#contenido2_2{
+    flex-grow: 2;
+}
+/*  El tercer elemento obtiene 1 parte */
+div#contenido3_2{
+    flex-grow: 1;
+}
+/*  El cuarto elemento obtiene 4 partes de las 7 que sobran */
+div#contenido4_2{
+    flex-grow: 4;
+}
+
+/*  FLEX-SHRINK */
+/*  El valor por defecto (1) y al ponerle al último elemento un flex-shrink 3 lo que hacemos es 
+    quitarle 3 partes de lo que falta, mientras que a las demás solo se le quita 1 */
+div#contf2 :last-child{
+   flex-shrink: 3;
+}
+
+
+div#nivel2 .contenido{
+    background-color: #9f67c5;
+    width: 250px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+}
+
+/*  Este estilo está comentado ya que el valor por defecto del flex-wrap es el nowrap y lo que hace es que no salte de linea */
+div#nivel2 #contenedor_nowrap{
+    /* flex-wrap: nowrap; */
+}
+
+/*  El flex-wrap: wrap lo que hace es que pueda saltar de linea para conservar su ancho */
+div#nivel2 #contenedor_wrap{
+    flex-wrap: wrap;
+}
+
+/*  El flex-wrap wrap-reverse permite a los elementos saltar de linea y los coloca a la inversa */
+div#nivel2 #contenedor_wreverse{
+    flex-wrap: wrap-reverse;
+}
+
+
+div#nivel3 .contenido{
+    background-color: #9b2a2a;
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+}
+
+/*  El estilo flex-start es el valor por defecto y lo que hace es alinear a la izquierda*/
+div#nivel3 #contenedor_fstart{
+    /* justify-content: flex-start; */
+}
+
+/*  Con el flex-end conseguimos alinear el contenido a la derecha */
+div#nivel3 #contenedor_fend{
+    justify-content: flex-end;
+}
+
+/*  El justify-content: center nos permite centrar horizontalmente el contenido de una caja */
+div#nivel3 #contenedor_center{
+    justify-content: center;
+}
+
+/*  Con el justify-content: space-beteween conseguimos que el espacion entre los elementos sea el mismo para todos, mientras que a los laterales
+    no les modifica la separación */
+div#nivel3 #contenedor_sbetween{
+    justify-content: space-between;
+}   
+
+/*  Podemos conseguir el mismo espacio entre el contenido y los laterales con el justify-content: space-around*/
+div#nivel3 #contenedor_saround{
+    justify-content: space-around;
+}

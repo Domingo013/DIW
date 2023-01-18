@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="estilo2.css">
+        <title>Practica flex box</title>
+    </head>
+    <body>
+        <h1>Flex-grow y Flex-shrink</h1>
+        <h3>Sin flex-box</h3>
+        <div id="nivel1">
+            <div class="contenedor">
+                <div class="contenido" id="contenido1">0</div>
+                <div class="contenido" id="contenido2">0</div>
+                <div class="contenido" id="contenido3">0</div>
+                <div class="contenido" id="contenido4">0</div>
+            </div>
+            <h3>Con flex-grow</h3>
+            <div class="contenedor_flex">
+                <div class="contenido" id="contenido1_2">0</div>
+                <div class="contenido" id="contenido2_2">2</div>
+                <div class="contenido" id="contenido3_2">1</div>
+                <div class="contenido" id="contenido4_2">4</div>
+            </div><br>
+            <hr>
+            <h3>Sin flex-box</h3>
+            <div class="contenedor" id="cont2">
+                <div class="contenido">0</div>
+                <div class="contenido">0</div>
+                <div class="contenido">0</div>
+                <div class="contenido">0</div>
+                <div class="contenido">0</div>
+                <div class="contenido">0</div>
+                <div class="contenido">0</div>
+                <div class="contenido">0</div>
+                <div class="contenido">0</div>
+                <div class="contenido">0</div>
+                <div class="contenido">0</div>
+                <div class="contenido">0</div>
+            </div>
+            <h3>Con flex-shrink</h3>
+            <div class="contenedor_flex" id="contf2">
+                <div class="contenido">1</div>
+                <div class="contenido">1</div>
+                <div class="contenido">1</div>
+                <div class="contenido">1</div>
+                <div class="contenido">1</div>
+                <div class="contenido">1</div>
+                <div class="contenido">1</div>
+                <div class="contenido">1</div>
+                <div class="contenido">1</div>
+                <div class="contenido">1</div>
+                <div class="contenido">1</div>
+                <div class="contenido">3</div>
+            </div>
+        </div><br>
+        <hr>
+        <h1>Flex-wrap</h1>
+        <div id="nivel2">
+            <h3>no-wrap (Por defecto)</h3>
+            <div class="contenedor_flex" id="contenedor_nowrap">
+                <div class="contenido">1</div>
+                <div class="contenido">2</div>
+                <div class="contenido">3</div>
+                <div class="contenido">4</div>
+                <div class="contenido">5</div>
+            </div>
+            <h3>wrap</h3>
+            <div class="contenedor_flex" id="contenedor_wrap">
+                <div class="contenido">1</div>
+                <div class="contenido">2</div>
+                <div class="contenido">3</div>
+                <div class="contenido">4</div>
+                <div class="contenido">5</div>
+            </div>
+            <h3>wrap-reverse</h3>
+            <div class="contenedor_flex" id="contenedor_wreverse">
+                <div class="contenido">1</div>
+                <div class="contenido">2</div>
+                <div class="contenido">3</div>
+                <div class="contenido">4</div>
+                <div class="contenido">5</div>
+            </div>
+        </div><br>
+        <hr>
+        <h1>Justify-content</h1>
+        <div id="nivel3">
+            <h3>flex-start</h3>
+            <div class="contenedor_flex" id="contenedor_fstart">
+                <div class="contenido">1</div>
+                <div class="contenido">2</div>
+                <div class="contenido">3</div>
+                <div class="contenido">4</div>
+            </div>
+            <h3>flex-end</h3>
+            <div class="contenedor_flex" id="contenedor_fend">
+                <div class="contenido">1</div>
+                <div class="contenido">2</div>
+                <div class="contenido">3</div>
+                <div class="contenido">4</div>
+            </div>
+            <h3>center</h3>
+            <div class="contenedor_flex" id="contenedor_center">
+                <div class="contenido">1</div>
+                <div class="contenido">2</div>
+                <div class="contenido">3</div>
+                <div class="contenido">4</div>
+            </div>
+            <h3>space-between</h3>
+            <div class="contenedor_flex" id="contenedor_sbetween">
+                <div class="contenido">1</div>
+                <div class="contenido">2</div>
+                <div class="contenido">3</div>
+                <div class="contenido">4</div>
+            </div>
+            <h3>space-around</h3>
+            <div class="contenedor_flex" id="contenedor_saround">
+                <div class="contenido">1</div>
+                <div class="contenido">2</div>
+                <div class="contenido">3</div>
+                <div class="contenido">4</div>
+            </div>
+        </div>
+    </body>
+</html>

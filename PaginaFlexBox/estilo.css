@@ -1,0 +1,81 @@
+body{
+    background-color: #BFD8D2;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+*{
+    margin: 0px;
+    padding: 10px;
+}
+
+div#padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+    header{ 
+        background-color: rgb(98, 131, 221);
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        div.menu{
+            background-color: rgba(0,0,0,.1);
+            height: 100px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+        }   
+            div#logo{
+                /* flex-shrink: 0; */
+                flex-grow: 1; 
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+                img#imglogo{
+                    width: 50px;
+                    height: auto;
+                }
+            div#nav{
+                flex-grow: 5;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            div#fecha{
+                flex-shrink: 0;
+                flex-grow: 1;
+                display: flex;
+                text-align: center;
+            }
+            div#fecha div{
+                color: white;
+            }
+
+    div#contenido{
+        background-color: black;
+    }
+        div#productos{
+            background-color: aquamarine;
+        }
+            div.producto{
+                background-color: blue;
+            }
+        div#piePagina{
+            background-color: tomato;
+            display: flex;
+            justify-content: center;
+        }
+            nav#pie{
+                display: flex;
+                justify-content: center;
+                flex-flow: row nowrap;
+                background-color: rgba(0,0,0,.1);;
+                width: 400px;
+            }
