@@ -1,5 +1,7 @@
 body{
     background-color: #BFD8D2;
+    width: 99%;
+    padding: 0;
 }
 
 a{
@@ -15,8 +17,8 @@ a{
 div#padre{
     display: flex;
     flex-flow: column nowrap;
+    padding: 0;
 }
-
     header{ 
         background-color: rgb(98, 131, 221);
         display: flex;
@@ -28,11 +30,11 @@ div#padre{
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
-        }   
+        }
             div#logo{
                 /* flex-shrink: 0; */
+                width: 200px;
                 flex-grow: 1; 
-                padding: 0;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -49,10 +51,12 @@ div#padre{
                 justify-content: center;
             }
             div#fecha{
+                width: 200px;
                 flex-shrink: 0;
                 flex-grow: 1;
                 display: flex;
-                text-align: center;
+                justify-content: center;
+                align-items: center;
             }
             div#fecha div{
                 color: white;
@@ -60,13 +64,49 @@ div#padre{
 
     div#contenido{
         background-color: black;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap; 
+        justify-items: flex-end;
     }
-        div#productos{
-            background-color: aquamarine;
+        div#contenido1{
+            background-color: rgb(253, 57, 50);
+            width: 25%;
+            min-width: 200px;
+            min-height: 500px;
+            max-height: 600px;
+            display: flex;
+            flex-direction: column;
         }
-            div.producto{
-                background-color: blue;
+            div.contenidos1{
+                background-color: yellowgreen;
+                height: 150px;
+                margin: 5px;
             }
+        div#contenido2{
+            background-color: rgb(250, 219, 47);
+            width: 100%;
+            min-height: 500px;
+            max-height: 600px;
+            display: flex;
+        }
+            div.contenidos2_1{
+                background-color: green;
+                width: 100%;
+                display: flex;
+            }
+                div.contenidos2{
+                    background-color: blueviolet;
+                    width: 100px;
+                    height: 100px;
+                    margin: 0 5px;
+                }
+                div.contenidos2_1 :first-child{
+                    background-color: chartreuse;
+                    min-width: 300px;
+                    height: 250px;
+                    margin: 0 5px;
+                }
         div#piePagina{
             background-color: tomato;
             display: flex;
@@ -76,6 +116,9 @@ div#padre{
                 display: flex;
                 justify-content: center;
                 flex-flow: row nowrap;
-                background-color: rgba(0,0,0,.1);;
+                background-color: rgba(0,0,0,.1);
                 width: 400px;
             }
+    footer{
+        background-color: rgb(98, 131, 221);
+    }
