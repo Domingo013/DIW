@@ -1,0 +1,113 @@
+body{
+    background-color: blanchedalmond;
+    width: 1280px;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: aquamarine;
+    width: 1240px;              /* Ancho total = 1280px, padding = 20px, 1280px - 20px * 2 = 1240px*/
+    height: 100px;
+    padding: 20px;
+}
+
+/* Contenido header*/
+div#logo{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+/* Contenedor 1*/
+div#contenedor1{
+    background-color: blueviolet;
+    width: 220px;               /* Ancho total = 300px, padding = 40px, 300px - 40px * 2 = 220px*/
+    height: 400px;
+    padding: 50px 40px;
+    float: left;
+}
+
+/* Contenido contenedor 1*/
+ul#navegador{
+    list-style-type: none;
+    padding: 0;
+}
+ul#navegador li{
+    margin: 20px 0;
+}
+ul#navegador a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+div#contenedor1 p{
+    background-color: rgba(27, 27, 27, .2);
+    width: 150px;
+    height: 25px;
+}
+
+/* Contenedor 2 */
+div#contenedor2{
+    background-color: yellow;
+    width: 900px;
+    height: 400px;
+    padding: 50px 40px;
+    float: left;
+}
+div#contenedor2 h1{
+    text-align: center;
+    margin-top: 0;
+}
+div#formulario{
+    background-color: red;
+    width: 818px;               /* Ancho total = 820, bordes = 1px, 820px - 1px * 2 = 818px*/
+    height: 350px;
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid black;
+    text-align: right;
+}
+button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(27, 27, 27, .5);
+}
+
+/* Contenido del formulario */
+input{
+    height: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px -18px;
+    padding: 0 10px;
+}
+input:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+}
+input:active {
+    transform: scale(0.95);
+}
+input[type="text"]{
+    width: 600px;
+}
+input[type="date"]{
+    width: 261px;
+}
+textarea{
+    width: 600px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px -18px;
+    padding: 0 10px;
+}
+button#btnCancelar{
+    float: left; 
+}
+input#publicar{
+    width: 18px;
+}
