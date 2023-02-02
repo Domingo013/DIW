@@ -1,12 +1,11 @@
 body{
-    background-color: blanchedalmond;
+    background-color: #dddddd;
     width: 1280px;
     margin: 0;
     padding: 0;
 }
-
 header{
-    background-color: aquamarine;
+    background-color: #86ada4;
     width: 1240px;              /* Ancho total = 1280px, padding = 20px, 1280px - 20px * 2 = 1240px*/
     height: 100px;
     padding: 20px;
@@ -20,9 +19,9 @@ img#logo{
 
 /* Contenedor 1*/
 div#contenedor1{
-    background-color: blueviolet;
+    background-color: #a3cec4;
     width: 220px;               /* Ancho total = 300px, padding = 40px, 300px - 40px * 2 = 220px*/
-    height: 400px;
+    min-height: 400px;
     padding: 50px 40px;
     float: left;
 }
@@ -43,14 +42,14 @@ ul#navegador a{
 div#contenedor1 p{
     background-color: rgba(27, 27, 27, .2);
     width: 150px;
-    height: 25px;
+    min-height: 25px;
 }
 
 /* Contenedor 2 */
 div#contenedor2{
-    background-color: yellow;
+    background-color: #dddddd;
     width: 900px;
-    height: 400px;
+    min-height: 400px;
     padding: 50px 40px;
     float: left;
 }
@@ -59,9 +58,9 @@ div#contenedor2 h1{
     margin-top: 0;
 }
 div#formulario{
-    background-color: rgb(253, 95, 95);
+    background-color: #BFD8D2;
     width: 818px;               /* Ancho total = 820, bordes = 1px, 820px - 1px * 2 = 818px*/
-    height: 350px;
+    min-height: 350px;
     padding: 20px;
     margin: 0 auto;
     border: 1px solid black;
@@ -69,7 +68,7 @@ div#formulario{
 }
 button{
     width: 100px;
-    height: 30px;
+    min-height: 30px;
     border-radius: 10px;
 }
 button:hover {
@@ -80,7 +79,7 @@ button:hover {
 
 /* Contenido del formulario */
 input{
-    height: 20px;
+    min-height: 20px;
     border-radius: 12px;
     box-shadow: 0px 0px 20px -18px;
     padding: 0 10px;
@@ -112,6 +111,6 @@ button#btnCancelar{
 button#btnAceptar{
     background-color: green;
 }
-input#publicar{
+/*input#publicar{
     width: 18px;
-}
+}*/
