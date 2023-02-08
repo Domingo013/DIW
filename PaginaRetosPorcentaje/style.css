@@ -150,6 +150,7 @@ button:hover {
 
 /* Contenido del formulario */
 input{
+    box-sizing: border-box;
     min-height: 20px;
     border-radius: 12px;
     box-shadow: 0px 0px 20px -18px;
@@ -174,6 +175,7 @@ input[type="date"]{
     padding: 0 0.6112469437652812%;     /* Ancho total utilizable 818px -> 100%, Padding 10px -> 0.6112469437652812% */
 }
 textarea{
+    box-sizing: border-box;
     /*width: 600px;*/
     width: 73.34963325183374%;          /* Ancho total utilizable 818px -> 100%, Ancho input 600px -> 73.34963325183374% */
     border-radius: 12px;
